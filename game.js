@@ -1,7 +1,7 @@
 var load = function(){
-     function require(a,b=true){var c;c=b===!0?".js":"";var d=document.createElement("script");d.src=a+c,d.type="text/javascript",document.head.appendChild(d)}
+     function require(a,b){var c;c=b===!0?".js":"";var d=document.createElement("script");d.src=a+c,d.type="text/javascript",document.head.appendChild(d)}
     //https://code.jquery.com/jquery-3.1.0.min
-    require("https://code.jquery.com/jquery-3.1.0.min");
+    require("https://code.jquery.com/jquery-3.1.0.min", true);
 
     function vert(){   
         $("#thing").hide();
